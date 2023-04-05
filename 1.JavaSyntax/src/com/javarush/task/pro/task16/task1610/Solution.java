@@ -12,6 +12,9 @@ public class Solution {
 
 
 
+
+
+
     static LocalTime timeMin = LocalTime.MIN;
     static LocalTime time1 = LocalTime.of(14,0,0,0);
     static LocalTime time2 = LocalTime.of(7,0,8);
