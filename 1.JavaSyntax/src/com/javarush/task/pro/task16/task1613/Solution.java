@@ -34,7 +34,15 @@ public class Solution {
     }
 
     public static boolean isWeekend(LocalDateTime dateTime) {
-        //напишите тут ваш код
+        int dayValue = dateTime.getDayOfWeek().getValue();
+        
+        if(SATURDAY == dayValue){
+            return true;
+        }else if(FRIDAY == dayValue && dateTime.getHour() >= WEEKEND_START_FRIDAY_CUT_OFF_HOUR){
+            return true;
+        }else if(SUNDAY == dayValue && dateTime.getHour() < WEEKEND_END_SUNDAY_CUT_OFF_HOUR){
+            return true;
+        }
 
         return false;
     }
