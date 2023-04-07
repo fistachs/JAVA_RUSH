@@ -462,3 +462,49 @@ java.lang.StringIndexOutOfBoundsException: begin -1, end 5, length 5
 2023-04-06 13:28:32 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
 2023-04-06 13:28:35 INFO  ApacheHttpClient.completed(32) - responseCode = 200
 2023-04-06 13:28:36 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-04-06 13:29:02 INFO  ProjectStartupHandler.projectClosing(155) - ---------- Project closed ----------
+
+2023-04-06 13:29:03 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-04-06 13:29:03 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-04-06 13:29:03 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-04-06 13:29:03 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-04-06 13:29:04 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-04-06 13:29:04 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-04-06 13:29:04 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-04-06 13:29:04 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-04-06 13:29:05 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-04-06 13:29:05 INFO  PluginProjectService.dispose(41) - PluginProjectService for disposed.
+2023-04-07 12:15:07 INFO  ProjectStartupHandler.runActivity(74) - ---------- Project opened ----------
+2023-04-07 12:15:07 INFO  ProjectStartupHandler.runActivity(75) - ---------- Version 4.03 ----------
+
+2023-04-07 12:15:07 INFO  ApacheHttpClient.isSessionAppropriateWithSecretKey(602) - Waiting for server response.
+2023-04-07 12:15:07 INFO  ApacheHttpClient.isSessionAppropriateWithSecretKey(602) - Waiting for server response.
+2023-04-07 12:15:07 INFO  ApacheHttpClient.refreshUserInfo(305) - responseCode = 200
+2023-04-07 12:15:07 INFO  ApacheHttpClient.refreshUserInfo(311) - User information received.
+2023-04-07 12:15:07 INFO  ApacheHttpClient.startGA(36) - GAService started.
+2023-04-07 12:30:29 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-04-07 12:30:29 INFO  ApacheHttpClient.getFilteredTasks(336) - responseCode = 200
+2023-04-07 12:30:32 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-04-07 12:30:32 INFO  ApacheHttpClient.getTaskTemplateInfo(353) - responseCode = 200
+2023-04-07 12:30:32 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-04-07 12:30:33 INFO  ApacheHttpClient.getTaskTemplateInfo(353) - responseCode = 200
+2023-04-07 12:44:04 INFO  ProjectStartupHandler.projectClosing(155) - ---------- Project closed ----------
+
+2023-04-07 12:44:04 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-04-07 12:44:04 INFO  PluginProjectService.dispose(41) - PluginProjectService for disposed.
+2023-04-07 13:05:33 INFO  PluginProjectService.<init>(33) - PluginProjectService for JavaRushTasks initiated.
+2023-04-07 13:05:38 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-04-07 13:05:38 INFO  ProjectStartupHandler.runActivity(74) - ---------- Project opened ----------
+2023-04-07 13:05:38 INFO  ProjectStartupHandler.runActivity(74) - ---------- Project opened ----------
+2023-04-07 13:05:38 INFO  ProjectStartupHandler.runActivity(75) - ---------- Version 4.03 ----------
+
+2023-04-07 13:05:38 INFO  ProjectStartupHandler.runActivity(75) - ---------- Version 4.03 ----------
+
+2023-04-07 13:05:38 INFO  ApacheHttpClient.isSessionAppropriateWithSecretKey(602) - Waiting for server response.
+2023-04-07 13:05:38 INFO  ApacheHttpClient.isSessionAppropriateWithSecretKey(602) - Waiting for server response.
+2023-04-07 13:05:38 INFO  ApacheHttpClient.refreshUserInfo(305) - responseCode = 200
+2023-04-07 13:05:38 INFO  ApacheHttpClient.refreshUserInfo(305) - responseCode = 200
+2023-04-07 13:05:38 INFO  ApacheHttpClient.refreshUserInfo(311) - User information received.
+2023-04-07 13:05:38 INFO  ApacheHttpClient.refreshUserInfo(311) - User information received.
+2023-04-07 13:05:38 INFO  ApacheHttpClient.startGA(36) - GAService started.
+2023-04-07 13:05:38 INFO  ApacheHttpClient.startGA(36) - GAService started.

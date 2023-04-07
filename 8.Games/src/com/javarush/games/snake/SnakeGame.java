@@ -14,6 +14,8 @@ public class SnakeGame extends Game{
         setScreenSize(WIDTH,HEIGHT);
         createGame();
     }
+
+
     
     @Override
     public void onTurn(int step){
