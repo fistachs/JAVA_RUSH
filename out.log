@@ -538,3 +538,27 @@ java.lang.StringIndexOutOfBoundsException: begin -1, end 5, length 5
 2023-04-08 11:53:52 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
 2023-04-08 11:53:53 INFO  ApacheHttpClient.completed(32) - responseCode = 200
 2023-04-08 11:53:53 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-04-08 12:19:55 INFO  ProjectStartupHandler.projectClosing(155) - ---------- Project closed ----------
+
+2023-04-08 12:19:55 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-04-08 12:19:55 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-04-08 12:19:55 INFO  PluginProjectService.dispose(41) - PluginProjectService for disposed.
+2023-04-09 11:41:48 INFO  ProjectStartupHandler.runActivity(74) - ---------- Project opened ----------
+2023-04-09 11:41:48 INFO  ProjectStartupHandler.runActivity(75) - ---------- Version 4.03 ----------
+
+2023-04-09 11:41:48 INFO  ApacheHttpClient.isSessionAppropriateWithSecretKey(602) - Waiting for server response.
+2023-04-09 11:41:48 INFO  ApacheHttpClient.startGA(36) - GAService started.
+2023-04-09 11:47:11 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-04-09 11:48:11 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-04-09 11:48:12 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-04-09 11:48:13 INFO  ApacheHttpClient.completed(32) - responseCode = 200
+2023-04-09 11:48:13 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-04-09 11:48:18 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-04-09 11:48:18 INFO  ApacheHttpClient.getFilteredTasks(336) - responseCode = 200
+2023-04-09 11:48:20 INFO  ApacheHttpClient.getTaskTemplateInfo(353) - responseCode = 200
+2023-04-09 11:48:20 INFO  TaskInfoSelectorMouseListener.createDirectoryRecursive(78) - File created :/Users/admin/Downloads/JavaRushTasks/1.JavaSyntax/src/com/javarush/task/pro/task17/task1704
+2023-04-09 11:51:18 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-04-09 11:54:23 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-04-09 11:54:23 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-04-09 11:54:28 INFO  ApacheHttpClient.completed(32) - responseCode = 200
+2023-04-09 11:54:28 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
