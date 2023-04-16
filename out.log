@@ -1737,3 +1737,16 @@ java.lang.StringIndexOutOfBoundsException: begin -1, end 5, length 5
 2023-04-15 13:29:20 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
 2023-04-15 13:29:22 INFO  ApacheHttpClient.completed(32) - responseCode = 200
 2023-04-15 13:29:22 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-04-15 13:35:43 INFO  ProjectStartupHandler.projectClosing(155) - ---------- Project closed ----------
+
+2023-04-15 13:35:43 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-04-15 13:35:44 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-04-15 13:35:44 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-04-15 13:35:44 INFO  PluginProjectService.dispose(41) - PluginProjectService for disposed.
+2023-04-16 11:27:22 INFO  ProjectStartupHandler.runActivity(74) - ---------- Project opened ----------
+2023-04-16 11:27:22 INFO  ProjectStartupHandler.runActivity(75) - ---------- Version 4.03 ----------
+
+2023-04-16 11:27:22 INFO  ApacheHttpClient.isSessionAppropriateWithSecretKey(602) - Waiting for server response.
+2023-04-16 11:27:22 INFO  ApacheHttpClient.refreshUserInfo(305) - responseCode = 200
+2023-04-16 11:27:22 INFO  ApacheHttpClient.refreshUserInfo(311) - User information received.
+2023-04-16 11:27:22 INFO  ApacheHttpClient.startGA(36) - GAService started.

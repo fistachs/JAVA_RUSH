@@ -20,5 +20,7 @@ public class SymbolGame extends Game {
         setCellValueEx(5,1,Color.ORANGE,"U");
         setCellValueEx(6,1,Color.ORANGE,"S");
         setCellValueEx(7,1,Color.ORANGE,"H");
+
+
     }
 }
