@@ -22,6 +22,14 @@ public class Randomizer extends Game {
     @Override
     public void onTurn(int step) {
         int dx = getRandomNumber(100);
-        setCellNumber(1,1,dx);
+        setCellNumber(1,1,dx);for (int x = 0; x < 5; x++) {
+            for (int y = 0; y < 5; y++) {
+                setCellColor(x, y, Color.WHITE);
+            }
+        }for (int x = 0; x < 5; x++) {
+            for (int y = 0; y < 5; y++) {
+                setCellColor(x, y, Color.WHITE);
+            }
+        }
     }
 }
