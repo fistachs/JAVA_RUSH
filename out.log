@@ -24435,3 +24435,130 @@ com.homework.plugin.analytics.PluginWarningException: warning
 2023-04-19 12:18:57 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
 2023-04-19 12:18:58 INFO  ApacheHttpClient.completed(32) - responseCode = 200
 2023-04-19 12:18:58 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-04-19 12:26:08 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-04-19 12:26:09 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-04-19 12:26:09 INFO  ApacheHttpClient.completed(32) - responseCode = 400
+2023-04-19 12:26:09 WARN  TaskCompleted.run(74) - You already completed this task: "Три метода и максимум"
+com.homework.plugin.analytics.PluginWarningException: warning
+	at com.homework.plugin.callback.TaskCompleted.run(TaskCompleted.java:74)
+	at com.intellij.openapi.application.TransactionGuardImpl.runWithWritingAllowed(TransactionGuardImpl.java:209)
+	at com.intellij.openapi.application.TransactionGuardImpl.access$100(TransactionGuardImpl.java:21)
+	at com.intellij.openapi.application.TransactionGuardImpl$1.run(TransactionGuardImpl.java:191)
+	at com.intellij.openapi.application.impl.ApplicationImpl.runIntendedWriteActionOnCurrentThread(ApplicationImpl.java:813)
+	at com.intellij.openapi.application.impl.ApplicationImpl$3.run(ApplicationImpl.java:429)
+	at com.intellij.openapi.application.impl.FlushQueue.doRun(FlushQueue.java:74)
+	at com.intellij.openapi.application.impl.FlushQueue.runNextEvent(FlushQueue.java:114)
+	at com.intellij.openapi.application.impl.FlushQueue.flushNow(FlushQueue.java:36)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:318)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:779)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:730)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:724)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:86)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:749)
+	at com.intellij.ide.IdeEventQueue.defaultDispatchEvent(IdeEventQueue.java:909)
+	at com.intellij.ide.IdeEventQueue._dispatchEvent(IdeEventQueue.java:756)
+	at com.intellij.ide.IdeEventQueue.lambda$dispatchEvent$5(IdeEventQueue.java:437)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.computePrioritized(CoreProgressManager.java:772)
+	at com.intellij.ide.IdeEventQueue.lambda$dispatchEvent$6(IdeEventQueue.java:436)
+	at com.intellij.openapi.application.TransactionGuardImpl.performActivity(TransactionGuardImpl.java:105)
+	at com.intellij.ide.IdeEventQueue.performActivity(IdeEventQueue.java:615)
+	at com.intellij.ide.IdeEventQueue.lambda$dispatchEvent$7(IdeEventQueue.java:434)
+	at com.intellij.openapi.application.impl.ApplicationImpl.runIntendedWriteActionOnCurrentThread(ApplicationImpl.java:813)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent(IdeEventQueue.java:480)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:207)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:128)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:117)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:105)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:92)
+2023-04-19 12:26:12 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-04-19 12:26:12 INFO  ApacheHttpClient.getFilteredTasks(336) - responseCode = 200
+2023-04-19 12:26:13 INFO  ApacheHttpClient.getTaskTemplateInfo(353) - responseCode = 200
+2023-04-19 12:26:13 INFO  TaskInfoSelectorMouseListener.createDirectoryRecursive(78) - File created :/Users/admin/Downloads/JavaRushTasks/2.JavaCore/src/com/javarush/task/task12/task1211
+2023-04-19 12:28:33 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-04-19 12:28:33 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-04-19 12:28:35 INFO  ApacheHttpClient.completed(32) - responseCode = 200
+2023-04-19 12:28:35 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-04-19 12:28:38 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-04-19 12:28:38 INFO  ApacheHttpClient.getFilteredTasks(336) - responseCode = 200
+2023-04-19 12:28:39 INFO  ApacheHttpClient.getTaskTemplateInfo(353) - responseCode = 200
+2023-04-19 12:28:39 INFO  TaskInfoSelectorMouseListener.createDirectoryRecursive(78) - File created :/Users/admin/Downloads/JavaRushTasks/2.JavaCore/src/com/javarush/task/task12/task1212
+2023-04-19 12:29:18 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-04-19 12:29:18 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-04-19 12:29:19 INFO  ApacheHttpClient.completed(32) - responseCode = 200
+2023-04-19 12:29:25 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-04-19 12:29:26 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-04-19 12:29:27 INFO  ApacheHttpClient.completed(32) - responseCode = 200
+2023-04-19 12:29:27 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-04-19 12:29:29 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-04-19 12:29:29 INFO  ApacheHttpClient.getFilteredTasks(336) - responseCode = 200
+2023-04-19 12:29:30 INFO  ApacheHttpClient.getTaskTemplateInfo(353) - responseCode = 200
+2023-04-19 12:29:30 INFO  TaskInfoSelectorMouseListener.createDirectoryRecursive(78) - File created :/Users/admin/Downloads/JavaRushTasks/2.JavaCore/src/com/javarush/task/task12/task1213
+2023-04-19 12:29:31 INFO  ApacheHttpClient.getTaskTemplateInfo(353) - responseCode = 200
+2023-04-19 12:30:29 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-04-19 12:30:30 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-04-19 12:30:31 INFO  ApacheHttpClient.completed(32) - responseCode = 200
+2023-04-19 12:30:31 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-04-19 12:30:33 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-04-19 12:30:33 INFO  ApacheHttpClient.getFilteredTasks(336) - responseCode = 200
+2023-04-19 12:30:34 INFO  ApacheHttpClient.getTaskTemplateInfo(353) - responseCode = 200
+2023-04-19 12:30:34 INFO  TaskInfoSelectorMouseListener.createDirectoryRecursive(78) - File created :/Users/admin/Downloads/JavaRushTasks/2.JavaCore/src/com/javarush/task/task12/task1214
+2023-04-19 12:32:21 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-04-19 12:32:22 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-04-19 12:32:23 INFO  ApacheHttpClient.completed(32) - responseCode = 200
+2023-04-19 12:32:23 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-04-19 12:32:25 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-04-19 12:32:25 INFO  ApacheHttpClient.getFilteredTasks(336) - responseCode = 200
+2023-04-19 12:32:26 INFO  ApacheHttpClient.getTaskTemplateInfo(353) - responseCode = 200
+2023-04-19 12:32:26 INFO  TaskInfoSelectorMouseListener.createDirectoryRecursive(78) - File created :/Users/admin/Downloads/JavaRushTasks/2.JavaCore/src/com/javarush/task/task12/task1215
+2023-04-19 12:32:27 INFO  ApacheHttpClient.getTaskTemplateInfo(353) - responseCode = 200
+2023-04-19 12:34:33 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-04-19 12:34:33 INFO  ApacheHttpClient.completed(32) - responseCode = 200
+2023-04-19 12:34:33 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-04-19 12:34:57 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-04-19 12:34:57 INFO  ApacheHttpClient.completed(32) - responseCode = 200
+2023-04-19 12:34:57 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-04-19 12:35:10 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-04-19 12:35:10 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-04-19 12:35:12 INFO  ApacheHttpClient.completed(32) - responseCode = 200
+2023-04-19 12:35:12 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-04-19 12:35:14 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-04-19 12:35:14 INFO  ApacheHttpClient.getFilteredTasks(336) - responseCode = 200
+2023-04-19 12:35:34 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-04-19 12:35:34 INFO  ApacheHttpClient.completed(32) - responseCode = 400
+2023-04-19 12:35:34 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-04-19 12:35:34 WARN  TaskCompleted.run(74) - You already completed this task: "Кошки не должны быть абстрактными!"
+com.homework.plugin.analytics.PluginWarningException: warning
+	at com.homework.plugin.callback.TaskCompleted.run(TaskCompleted.java:74)
+	at com.intellij.openapi.application.TransactionGuardImpl.runWithWritingAllowed(TransactionGuardImpl.java:209)
+	at com.intellij.openapi.application.TransactionGuardImpl.access$100(TransactionGuardImpl.java:21)
+	at com.intellij.openapi.application.TransactionGuardImpl$1.run(TransactionGuardImpl.java:191)
+	at com.intellij.openapi.application.impl.ApplicationImpl.runIntendedWriteActionOnCurrentThread(ApplicationImpl.java:813)
+	at com.intellij.openapi.application.impl.ApplicationImpl$3.run(ApplicationImpl.java:429)
+	at com.intellij.openapi.application.impl.FlushQueue.doRun(FlushQueue.java:74)
+	at com.intellij.openapi.application.impl.FlushQueue.runNextEvent(FlushQueue.java:114)
+	at com.intellij.openapi.application.impl.FlushQueue.flushNow(FlushQueue.java:36)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:318)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:779)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:730)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:724)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:86)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:749)
+	at com.intellij.ide.IdeEventQueue.defaultDispatchEvent(IdeEventQueue.java:909)
+	at com.intellij.ide.IdeEventQueue._dispatchEvent(IdeEventQueue.java:756)
+	at com.intellij.ide.IdeEventQueue.lambda$dispatchEvent$5(IdeEventQueue.java:437)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.computePrioritized(CoreProgressManager.java:772)
+	at com.intellij.ide.IdeEventQueue.lambda$dispatchEvent$6(IdeEventQueue.java:436)
+	at com.intellij.openapi.application.TransactionGuardImpl.performActivity(TransactionGuardImpl.java:105)
+	at com.intellij.ide.IdeEventQueue.performActivity(IdeEventQueue.java:615)
+	at com.intellij.ide.IdeEventQueue.lambda$dispatchEvent$7(IdeEventQueue.java:434)
+	at com.intellij.openapi.application.impl.ApplicationImpl.runIntendedWriteActionOnCurrentThread(ApplicationImpl.java:813)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent(IdeEventQueue.java:480)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:207)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:128)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:117)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:105)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:92)
