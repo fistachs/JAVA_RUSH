@@ -15,6 +15,40 @@ public class Solution {
         System.out.println(books);
     }
 
+    public static class MarkTwainBook extends Book {
+        private String title;
+
+        public MarkTwainBook(String title) {
+            super("Mark Twain");
+            this.title = title;
+        }
+
+        public MarkTwainBook getBook() {
+            return this;
+        }
+
+        public String getTitle() {
+            return title;
+        }
+    }
+
+    public static class AgathaChristieBook extends Book {
+        private String title;
+
+        public AgathaChristieBook(String title) {
+            super("Agatha Christie");
+            this.title = title;
+        }
+
+        public AgathaChristieBook getBook() {
+            return this;
+        }
+
+        public String getTitle() {
+            return title;
+        }
+    }
+
     abstract static class Book {
         private String author;
 
@@ -31,7 +65,8 @@ public class Solution {
             String markTwainOutput = getBook().getTitle() + " was written by " + author;
 
             String output = "output";
-            //Add your code here
+            if (getBook() instanceof AgathaChristieBook) output = agathaChristieOutput;
+            else if (getBook() instanceof MarkTwainBook) output = markTwainOutput;
 
             return output;
         }
@@ -39,5 +74,6 @@ public class Solution {
         public String toString() {
             return getOutputByBookType();
         }
+        
     }
 }
