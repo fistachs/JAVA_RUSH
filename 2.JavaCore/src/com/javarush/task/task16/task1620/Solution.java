@@ -19,7 +19,7 @@ public class Solution {
 
     public static void ourInterruptMethod() {
         for(int i = 0 ; i < threadCount ; i++){
-            threads.get(i).interrupt();
+              threads.get(i).interrupt();
         }
     }
 
