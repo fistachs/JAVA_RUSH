@@ -38439,3 +38439,242 @@ java.lang.StringIndexOutOfBoundsException: begin -1, end 58, length 58
 2023-05-22 14:11:44 INFO  ApacheHttpClient.refreshUserInfo(311) - User information received.
 2023-05-22 14:11:44 INFO  ApacheHttpClient.startGA(36) - GAService started.
 2023-05-22 14:11:44 INFO  ApacheHttpClient.startGA(36) - GAService started.
+2023-05-22 14:12:21 INFO  ProjectStartupHandler.projectClosing(155) - ---------- Project closed ----------
+
+2023-05-22 14:12:21 INFO  ProjectStartupHandler.projectClosing(155) - ---------- Project closed ----------
+
+2023-05-22 14:12:21 INFO  PluginProjectService.dispose(41) - PluginProjectService for disposed.
+2023-05-22 14:12:21 INFO  PluginProjectService.dispose(41) - PluginProjectService for disposed.
+2023-05-23 10:41:36 INFO  ProjectStartupHandler.runActivity(74) - ---------- Project opened ----------
+2023-05-23 10:41:36 INFO  ProjectStartupHandler.runActivity(75) - ---------- Version 4.03 ----------
+
+2023-05-23 10:41:36 INFO  ApacheHttpClient.isSessionAppropriateWithSecretKey(602) - Waiting for server response.
+2023-05-23 10:41:36 INFO  ApacheHttpClient.refreshUserInfo(305) - responseCode = 200
+2023-05-23 10:41:36 INFO  ApacheHttpClient.refreshUserInfo(311) - User information received.
+2023-05-23 10:41:36 INFO  ApacheHttpClient.startGA(36) - GAService started.
+2023-05-23 10:41:37 INFO  AnalyticsService.run(86) - null : error in server. Status code :429
+2023-05-23 10:43:45 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-05-23 10:44:07 INFO  AnalyticsService.run(86) - null : error in server. Status code :429
+2023-05-23 10:44:17 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-05-23 10:44:25 INFO  AnalyticsService.run(86) - null : error in server. Status code :429
+2023-05-23 10:46:05 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-05-23 10:46:42 INFO  AnalyticsService.run(86) - null : error in server. Status code :429
+2023-05-23 10:48:56 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-05-23 10:48:57 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-05-23 10:49:03 INFO  ApacheHttpClient.completed(32) - responseCode = 200
+2023-05-23 10:49:03 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-05-23 10:49:04 INFO  AnalyticsService.run(86) - null : error in server. Status code :429
+2023-05-23 10:49:04 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-05-23 10:49:05 INFO  ApacheHttpClient.getFilteredTasks(336) - responseCode = 200
+2023-05-23 10:49:08 INFO  AnalyticsService.run(86) - null : error in server. Status code :429
+2023-05-23 10:50:53 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-05-23 10:50:54 INFO  ApacheHttpClient.getFilteredTasks(336) - responseCode = 200
+2023-05-23 10:50:55 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-05-23 10:50:55 INFO  AnalyticsService.run(86) - null : error in server. Status code :429
+2023-05-23 10:50:55 INFO  ApacheHttpClient.getTaskTemplateInfo(353) - responseCode = 200
+2023-05-23 10:52:19 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-05-23 10:52:38 INFO  AnalyticsService.run(86) - null : error in server. Status code :429
+2023-05-23 10:53:39 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-05-23 10:53:40 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-05-23 10:53:42 INFO  ApacheHttpClient.completed(32) - responseCode = 200
+2023-05-23 10:53:43 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-05-23 10:53:43 INFO  AnalyticsService.run(86) - null : error in server. Status code :429
+2023-05-23 10:53:44 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-05-23 10:53:44 INFO  ApacheHttpClient.getFilteredTasks(336) - responseCode = 200
+2023-05-23 10:53:46 INFO  AnalyticsService.run(86) - null : error in server. Status code :429
+2023-05-23 10:53:46 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-05-23 10:53:46 INFO  ApacheHttpClient.getTaskTemplateInfo(353) - responseCode = 200
+2023-05-23 10:57:34 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-05-23 10:57:49 INFO  AnalyticsService.run(86) - null : error in server. Status code :429
+2023-05-23 11:04:22 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-05-23 11:04:22 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-05-23 11:04:24 INFO  ApacheHttpClient.completed(32) - responseCode = 200
+2023-05-23 11:04:25 INFO  AnalyticsService.run(86) - null : error in server. Status code :429
+2023-05-23 11:05:56 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-05-23 11:06:16 INFO  AnalyticsService.run(86) - null : error in server. Status code :429
+2023-05-23 11:06:17 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-05-23 11:06:17 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-05-23 11:06:19 INFO  ApacheHttpClient.completed(32) - responseCode = 200
+2023-05-23 11:06:19 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-05-23 11:06:19 INFO  AnalyticsService.run(86) - null : error in server. Status code :429
+2023-05-23 11:07:19 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-05-23 11:07:20 INFO  ApacheHttpClient.getFilteredTasks(336) - responseCode = 200
+2023-05-23 11:07:22 INFO  AnalyticsService.run(86) - null : error in server. Status code :429
+2023-05-23 11:07:22 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-05-23 11:07:22 INFO  ApacheHttpClient.getTaskTemplateInfo(353) - responseCode = 200
+2023-05-23 11:13:08 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-05-23 11:13:46 INFO  AnalyticsService.run(86) - null : error in server. Status code :429
+2023-05-23 11:13:48 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-05-23 11:13:49 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-05-23 11:13:54 INFO  ApacheHttpClient.completed(32) - responseCode = 200
+2023-05-23 11:13:54 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-05-23 11:13:54 INFO  AnalyticsService.run(86) - null : error in server. Status code :429
+2023-05-23 11:13:55 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-05-23 11:13:55 INFO  ApacheHttpClient.getFilteredTasks(336) - responseCode = 200
+2023-05-23 11:14:00 INFO  AnalyticsService.run(86) - null : error in server. Status code :429
+2023-05-23 11:14:00 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-05-23 11:14:00 INFO  ApacheHttpClient.getTaskTemplateInfo(353) - responseCode = 200
+2023-05-23 11:14:00 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-05-23 11:14:01 INFO  ApacheHttpClient.getTaskTemplateInfo(353) - responseCode = 200
+2023-05-23 11:16:54 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-05-23 11:17:09 INFO  AnalyticsService.run(86) - null : error in server. Status code :429
+2023-05-23 11:17:24 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-05-23 11:17:25 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-05-23 11:17:29 INFO  ApacheHttpClient.completed(32) - responseCode = 200
+2023-05-23 11:17:29 INFO  AnalyticsService.run(86) - null : error in server. Status code :429
+2023-05-23 11:19:05 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-05-23 11:19:05 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-05-23 11:19:08 INFO  ApacheHttpClient.completed(32) - responseCode = 200
+2023-05-23 11:19:09 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-05-23 11:19:09 INFO  AnalyticsService.run(86) - null : error in server. Status code :429
+2023-05-23 11:21:16 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-05-23 11:21:16 INFO  ApacheHttpClient.getFilteredTasks(336) - responseCode = 200
+2023-05-23 11:21:18 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-05-23 11:21:18 INFO  AnalyticsService.run(86) - null : error in server. Status code :429
+2023-05-23 11:21:18 INFO  ApacheHttpClient.getTaskTemplateInfo(353) - responseCode = 200
+2023-05-23 11:28:43 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-05-23 11:28:44 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-05-23 11:28:48 INFO  ApacheHttpClient.completed(32) - responseCode = 200
+2023-05-23 11:28:48 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-05-23 11:28:48 INFO  AnalyticsService.run(86) - null : error in server. Status code :429
+2023-05-23 11:36:59 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-05-23 11:36:59 INFO  ApacheHttpClient.getFilteredTasks(336) - responseCode = 200
+2023-05-23 11:37:01 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-05-23 11:37:01 INFO  AnalyticsService.run(86) - null : error in server. Status code :429
+2023-05-23 11:37:01 INFO  ApacheHttpClient.getTaskTemplateInfo(353) - responseCode = 200
+2023-05-23 11:45:52 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-05-23 11:46:03 INFO  AnalyticsService.run(86) - null : error in server. Status code :429
+2023-05-23 11:46:39 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-05-23 11:46:54 INFO  AnalyticsService.run(86) - null : error in server. Status code :429
+2023-05-23 11:46:55 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-05-23 11:46:56 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-05-23 11:47:03 INFO  ApacheHttpClient.completed(32) - responseCode = 200
+2023-05-23 11:47:03 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-05-23 11:47:03 INFO  AnalyticsService.run(86) - null : error in server. Status code :429
+2023-05-23 11:47:05 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-05-23 11:47:05 INFO  ApacheHttpClient.getFilteredTasks(336) - responseCode = 200
+2023-05-23 11:47:08 INFO  AnalyticsService.run(86) - null : error in server. Status code :429
+2023-05-23 11:47:08 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-05-23 11:47:08 INFO  ApacheHttpClient.getTaskTemplateInfo(353) - responseCode = 200
+2023-05-23 11:48:21 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-05-23 11:48:31 INFO  AnalyticsService.run(86) - null : error in server. Status code :429
+2023-05-23 11:51:24 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-05-23 11:51:38 INFO  AnalyticsService.run(86) - null : error in server. Status code :429
+2023-05-23 11:56:10 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-05-23 11:56:10 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-05-23 11:56:14 INFO  ApacheHttpClient.completed(32) - responseCode = 200
+2023-05-23 11:56:14 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-05-23 11:56:14 INFO  AnalyticsService.run(86) - null : error in server. Status code :429
+2023-05-23 12:01:38 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-05-23 12:01:38 INFO  ApacheHttpClient.getFilteredTasks(336) - responseCode = 200
+2023-05-23 12:01:40 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-05-23 12:01:40 INFO  AnalyticsService.run(86) - null : error in server. Status code :429
+2023-05-23 12:01:40 INFO  ApacheHttpClient.getTaskTemplateInfo(353) - responseCode = 200
+2023-05-23 12:01:45 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-05-23 12:01:46 INFO  ApacheHttpClient.getFilteredTasks(336) - responseCode = 200
+2023-05-23 12:01:48 INFO  AnalyticsService.run(86) - null : error in server. Status code :429
+2023-05-23 12:01:48 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-05-23 12:01:48 INFO  ApacheHttpClient.getTaskTemplateInfo(353) - responseCode = 200
+2023-05-23 12:01:57 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-05-23 12:01:57 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-05-23 12:01:59 INFO  ApacheHttpClient.completed(32) - responseCode = 200
+2023-05-23 12:01:59 INFO  AnalyticsService.run(86) - null : error in server. Status code :429
+2023-05-23 12:09:17 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-05-23 12:10:07 INFO  AnalyticsService.run(86) - null : error in server. Status code :429
+2023-05-23 12:10:08 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-05-23 12:10:15 INFO  AnalyticsService.run(86) - null : error in server. Status code :429
+2023-05-23 12:10:17 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-05-23 12:10:17 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-05-23 12:10:18 INFO  ApacheHttpClient.completed(32) - responseCode = 200
+2023-05-23 12:10:19 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-05-23 12:10:19 INFO  AnalyticsService.run(86) - null : error in server. Status code :429
+2023-05-23 12:10:20 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-05-23 12:10:21 INFO  ApacheHttpClient.getFilteredTasks(336) - responseCode = 200
+2023-05-23 12:10:23 INFO  AnalyticsService.run(86) - null : error in server. Status code :429
+2023-05-23 12:10:23 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-05-23 12:10:23 INFO  ApacheHttpClient.getTaskTemplateInfo(353) - responseCode = 200
+2023-05-23 12:12:39 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-05-23 12:12:40 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-05-23 12:12:43 INFO  ApacheHttpClient.completed(32) - responseCode = 200
+2023-05-23 12:12:44 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-05-23 12:12:44 INFO  AnalyticsService.run(86) - null : error in server. Status code :429
+2023-05-23 12:12:46 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-05-23 12:12:46 INFO  ApacheHttpClient.getFilteredTasks(336) - responseCode = 200
+2023-05-23 12:12:48 INFO  AnalyticsService.run(86) - null : error in server. Status code :429
+2023-05-23 12:12:48 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-05-23 12:12:49 INFO  ApacheHttpClient.getTaskTemplateInfo(353) - responseCode = 200
+2023-05-23 12:14:13 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-05-23 12:16:56 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-05-23 12:16:57 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-05-23 12:17:00 INFO  ApacheHttpClient.completed(32) - responseCode = 200
+2023-05-23 12:17:00 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-05-23 12:17:01 INFO  AnalyticsService.run(86) - null : error in server. Status code :429
+2023-05-23 12:17:02 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-05-23 12:17:03 INFO  ApacheHttpClient.getFilteredTasks(336) - responseCode = 200
+2023-05-23 12:17:04 INFO  AnalyticsService.run(86) - null : error in server. Status code :429
+2023-05-23 12:17:04 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-05-23 12:17:05 INFO  ApacheHttpClient.getTaskTemplateInfo(353) - responseCode = 200
+2023-05-23 12:17:05 INFO  AnalyticsService.run(86) - null : error in server. Status code :429
+2023-05-23 12:23:02 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-05-23 12:23:02 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-05-23 12:23:07 INFO  ApacheHttpClient.completed(32) - responseCode = 200
+2023-05-23 12:23:07 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-05-23 12:23:07 INFO  AnalyticsService.run(86) - null : error in server. Status code :429
+2023-05-23 12:23:09 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-05-23 12:23:09 INFO  ApacheHttpClient.getFilteredTasks(336) - responseCode = 200
+2023-05-23 12:23:11 INFO  AnalyticsService.run(86) - null : error in server. Status code :429
+2023-05-23 12:23:11 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-05-23 12:23:11 INFO  ApacheHttpClient.getTaskTemplateInfo(353) - responseCode = 200
+2023-05-23 12:24:21 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-05-23 12:24:29 INFO  AnalyticsService.run(86) - null : error in server. Status code :429
+2023-05-23 12:31:49 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-05-23 12:31:49 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-05-23 12:31:55 INFO  ApacheHttpClient.completed(32) - responseCode = 200
+2023-05-23 12:31:55 INFO  AnalyticsService.run(86) - null : error in server. Status code :429
+2023-05-23 12:32:09 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-05-23 12:32:28 INFO  AnalyticsService.run(86) - null : error in server. Status code :429
+2023-05-23 12:32:30 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-05-23 12:32:30 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-05-23 12:32:40 INFO  ApacheHttpClient.completed(32) - responseCode = 200
+2023-05-23 12:32:41 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-05-23 12:32:41 INFO  AnalyticsService.run(86) - null : error in server. Status code :429
+2023-05-23 12:32:42 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-05-23 12:32:42 INFO  ApacheHttpClient.getFilteredTasks(336) - responseCode = 200
+2023-05-23 12:32:44 INFO  AnalyticsService.run(86) - null : error in server. Status code :429
+2023-05-23 12:32:44 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-05-23 12:32:44 INFO  ApacheHttpClient.getTaskTemplateInfo(353) - responseCode = 200
+2023-05-23 12:34:20 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-05-23 12:34:20 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-05-23 12:34:25 INFO  ApacheHttpClient.completed(32) - responseCode = 200
+2023-05-23 12:34:26 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-05-23 12:34:26 INFO  AnalyticsService.run(86) - null : error in server. Status code :429
+2023-05-23 12:34:28 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-05-23 12:34:28 INFO  ApacheHttpClient.getFilteredTasks(336) - responseCode = 200
+2023-05-23 12:34:30 INFO  AnalyticsService.run(86) - null : error in server. Status code :429
+2023-05-23 12:34:30 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-05-23 12:34:30 INFO  ApacheHttpClient.getTaskTemplateInfo(353) - responseCode = 200
+2023-05-23 12:38:35 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-05-23 12:38:36 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-05-23 12:38:37 INFO  ApacheHttpClient.completed(32) - responseCode = 200
+2023-05-23 12:38:37 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-05-23 12:38:37 INFO  AnalyticsService.run(86) - null : error in server. Status code :429
+2023-05-23 12:47:15 INFO  ProjectStartupHandler.projectClosing(155) - ---------- Project closed ----------
+
+2023-05-23 12:47:15 INFO  AnalyticsService.run(86) - null : error in server. Status code :429
+2023-05-23 12:47:15 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-05-23 12:47:16 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-05-23 12:47:16 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-05-23 12:47:16 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-05-23 12:47:17 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-05-23 12:47:17 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-05-23 12:47:17 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-05-23 12:47:18 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-05-23 12:47:18 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-05-23 12:47:18 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-05-23 12:47:18 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-05-23 12:47:18 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-05-23 12:47:19 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-05-23 12:47:19 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-05-23 12:47:19 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-05-23 12:47:20 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-05-23 12:47:24 INFO  PluginProjectService.dispose(41) - PluginProjectService for disposed.

@@ -7,9 +7,14 @@ public class RacerGame extends Game{
     public static final int HEIGHT = 64;
     public static final int CENTER_X = WIDTH/2;
     public static final int ROADSIDE_WIDTH = 14;
+    private static final int RACE_GOAL_CARS_COUNT = 40;
+    private ProgressBar progressBar;
     private PlayerCar player;
     private RoadMarking roadMarking;
     private RoadManager roadManager;
+    private boolean isGameStopped;
+    private FinishLine finishLine;
+    private int score;
 
     @Override
     public void onKeyPress(Key key){
@@ -18,12 +23,21 @@ public class RacerGame extends Game{
         }else if(key == Key.LEFT){
             player.setDirection(Direction.LEFT);
         }
+        if (key == Key.SPACE && isGameStopped) {
+            createGame();
+        }
+        if(key == Key.UP){
+            player.speed = 2;
+        }
     }
     @Override
     public void onKeyReleased(Key key){
         if((key == Key.RIGHT && player.getDirection() == Direction.RIGHT)
             ||(key == Key.LEFT && player.getDirection() == Direction.LEFT)){
             player.setDirection(Direction.NONE);
+        }
+        if(key == Key.UP){
+            player.speed = 1;
         }
     }
     @Override
@@ -35,14 +49,35 @@ public class RacerGame extends Game{
 
     @Override
     public void onTurn(int step) {
+        if(roadManager.checkCrush(player)){
+            gameOver();
+            drawScene();
+            return;
+        }
+        int count = roadManager.getPassedCarsCount();
+        if(count >= RACE_GOAL_CARS_COUNT){
+            finishLine.show();
+        }
+       if(finishLine.isCrossed(player)){
+           win();
+           drawScene();
+           return;
+       }
         moveAll();
+        roadManager.generateNewRoadObjects(this);
+        score -=5;
+        setScore(score);
         drawScene();
     }
 
     private void createGame() {
+        score = 3500;
+        isGameStopped = false;
         roadMarking = new RoadMarking();
         player = new PlayerCar();
         roadManager = new RoadManager();
+        finishLine = new FinishLine();
+        progressBar = new ProgressBar(RACE_GOAL_CARS_COUNT);
         drawScene();
         setTurnTimer(40);
     }
@@ -52,6 +87,8 @@ public class RacerGame extends Game{
         roadMarking.draw(this);
         player.draw(this);
         roadManager.draw(this);
+        finishLine.draw(this);
+        progressBar.draw(this);
     }
 
     private void drawField(){
@@ -70,6 +107,9 @@ public class RacerGame extends Game{
 
     private void moveAll() {
         roadMarking.move(player.speed);
+        roadManager.move(player.speed);
+        finishLine.move(player.speed);
+        progressBar.move(roadManager.getPassedCarsCount());
         player.move();
     }
 
@@ -79,5 +119,16 @@ public class RacerGame extends Game{
             return;
         }
         super.setCellColor(x, y, color);
+    }
+    private void gameOver(){
+        isGameStopped = true;
+        showMessageDialog(Color.BLACK,"You looser!",Color.NAVAJOWHITE,75);
+        stopTurnTimer();
+        player.stop();
+    }
+    private void win(){
+        isGameStopped = true;
+        showMessageDialog(Color.BLACK,"You winner!",Color.NAVAJOWHITE,75);
+        stopTurnTimer();
     }
 }
