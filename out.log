@@ -38721,3 +38721,61 @@ java.lang.StringIndexOutOfBoundsException: begin -1, end 58, length 58
 2023-05-24 10:36:47 INFO  ApacheHttpClient.completed(32) - responseCode = 200
 2023-05-24 10:36:47 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
 2023-05-24 10:36:47 INFO  AnalyticsService.run(86) - null : error in server. Status code :429
+2023-05-24 23:07:31 INFO  ProjectStartupHandler.projectClosing(155) - ---------- Project closed ----------
+
+2023-05-24 23:07:31 INFO  AnalyticsService.run(86) - null : error in server. Status code :429
+2023-05-24 23:07:31 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-05-24 23:07:31 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-05-24 23:07:31 INFO  PluginProjectService.dispose(41) - PluginProjectService for disposed.
+2023-05-25 10:50:02 INFO  ProjectStartupHandler.runActivity(74) - ---------- Project opened ----------
+2023-05-25 10:50:02 INFO  ProjectStartupHandler.runActivity(75) - ---------- Version 4.03 ----------
+
+2023-05-25 10:50:02 INFO  ApacheHttpClient.isSessionAppropriateWithSecretKey(602) - Waiting for server response.
+2023-05-25 10:50:02 INFO  ApacheHttpClient.isSessionAppropriateWithSecretKey(602) - Waiting for server response.
+2023-05-25 10:50:02 INFO  ApacheHttpClient.refreshUserInfo(305) - responseCode = 200
+2023-05-25 10:50:02 INFO  ApacheHttpClient.refreshUserInfo(311) - User information received.
+2023-05-25 10:50:02 INFO  ApacheHttpClient.startGA(36) - GAService started.
+2023-05-25 10:50:02 INFO  AnalyticsService.run(86) - null : error in server. Status code :429
+2023-05-25 10:50:39 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-05-25 10:50:39 INFO  ApacheHttpClient.getFilteredTasks(336) - responseCode = 200
+2023-05-25 10:50:47 INFO  AnalyticsService.run(86) - null : error in server. Status code :429
+2023-05-25 10:50:47 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-05-25 10:50:48 INFO  ApacheHttpClient.getTaskTemplateInfo(353) - responseCode = 200
+2023-05-25 10:50:48 INFO  TaskInfoSelectorMouseListener.createDirectoryRecursive(78) - File created :/Users/admin/Downloads/JavaRushTasks/8.Games/src/com/javarush/games/spaceinvaders
+2023-05-25 10:53:03 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-05-25 10:53:04 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-05-25 10:53:05 INFO  ApacheHttpClient.completed(32) - responseCode = 200
+2023-05-25 10:53:05 INFO  AnalyticsService.run(86) - null : error in server. Status code :429
+2023-05-25 10:53:19 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-05-25 10:53:19 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-05-25 10:53:21 INFO  ApacheHttpClient.completed(32) - responseCode = 200
+2023-05-25 10:53:21 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-05-25 10:53:21 INFO  AnalyticsService.run(86) - null : error in server. Status code :429
+2023-05-25 10:53:22 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-05-25 10:53:23 INFO  ApacheHttpClient.getFilteredTasks(336) - responseCode = 200
+2023-05-25 10:53:24 INFO  AnalyticsService.run(86) - null : error in server. Status code :429
+2023-05-25 10:53:24 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-05-25 10:53:25 INFO  ApacheHttpClient.getTaskTemplateInfo(353) - responseCode = 200
+2023-05-25 10:54:37 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-05-25 10:54:38 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-05-25 10:54:42 INFO  ApacheHttpClient.completed(32) - responseCode = 200
+2023-05-25 10:54:43 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-05-25 10:54:43 INFO  AnalyticsService.run(86) - null : error in server. Status code :429
+2023-05-25 10:54:44 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-05-25 10:54:44 INFO  ApacheHttpClient.getFilteredTasks(336) - responseCode = 200
+2023-05-25 10:54:46 INFO  AnalyticsService.run(86) - null : error in server. Status code :429
+2023-05-25 10:54:46 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-05-25 10:54:46 INFO  ApacheHttpClient.getTaskTemplateInfo(353) - responseCode = 200
+2023-05-25 10:56:18 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-05-25 10:56:19 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-05-25 10:56:20 INFO  ApacheHttpClient.completed(32) - responseCode = 200
+2023-05-25 10:56:20 INFO  AnalyticsService.run(86) - null : error in server. Status code :429
+2023-05-25 11:21:25 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-05-25 11:21:26 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-05-25 11:21:27 INFO  ApacheHttpClient.completed(32) - responseCode = 200
+2023-05-25 11:21:27 INFO  AnalyticsService.run(86) - null : error in server. Status code :429
+2023-05-25 11:21:34 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-05-25 11:21:34 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-05-25 11:21:46 INFO  ApacheHttpClient.completed(32) - responseCode = 200
+2023-05-25 11:21:46 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-05-25 11:21:46 INFO  AnalyticsService.run(86) - null : error in server. Status code :429
