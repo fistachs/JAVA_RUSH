@@ -4,7 +4,7 @@ import com.javarush.engine.cell.*;
 
 public class SnakeGame extends Game {
     private int score;
-    private static final int GOAL = 30;
+    private static final int GOAL = 25;
     public static final int WIDTH = 15;
     public static final int HEIGHT = 15;
 

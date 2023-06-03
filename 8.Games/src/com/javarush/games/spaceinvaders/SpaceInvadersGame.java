@@ -1,6 +1,7 @@
 package com.javarush.games.spaceinvaders;
 
 import com.javarush.engine.cell.*;
+import com.javarush.games.spaceinvaders.gameobjects.EnemyFleet;
 import com.javarush.games.spaceinvaders.gameobjects.Star;
 
 import java.util.ArrayList;
@@ -10,20 +11,28 @@ public class SpaceInvadersGame extends Game {
     public static final int WIDTH = 64;
     public static final int HEIGHT = 64;
     private List<Star> stars;
+    private EnemyFleet enemyFleet;
 
     @Override
     public void initialize() {
         setScreenSize(WIDTH, HEIGHT);
         createGame();
     }
+    @Override
+    public void onTurn(int x){
+        drawScene();
+    }
 
     private void createGame() {
+        setTurnTimer(40);
         createStars();
+        enemyFleet = new EnemyFleet();
         drawScene();
     }
 
     private void drawScene() {
         drawField();
+        enemyFleet.draw(this);
     }
 
     private void drawField() {
