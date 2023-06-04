@@ -40733,3 +40733,23 @@ java.net.UnknownHostException: javarush.com
 2023-06-03 13:10:28 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
 2023-06-03 13:10:29 INFO  ApacheHttpClient.completed(32) - responseCode = 200
 2023-06-03 13:10:29 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-06-03 13:11:23 INFO  ProjectStartupHandler.projectClosing(155) - ---------- Project closed ----------
+
+2023-06-03 13:11:23 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-06-03 13:11:23 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-06-03 13:11:23 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-06-03 13:11:24 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-06-03 13:11:24 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-06-03 13:11:24 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-06-03 13:11:25 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-06-03 13:11:25 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-06-03 13:11:25 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-06-03 13:11:25 INFO  PluginProjectService.dispose(41) - PluginProjectService for disposed.
+2023-06-04 22:29:40 INFO  ProjectStartupHandler.runActivity(74) - ---------- Project opened ----------
+2023-06-04 22:29:40 INFO  ProjectStartupHandler.runActivity(75) - ---------- Version 4.03 ----------
+
+2023-06-04 22:29:40 INFO  ApacheHttpClient.isSessionAppropriateWithSecretKey(602) - Waiting for server response.
+2023-06-04 22:29:40 INFO  ApacheHttpClient.isSessionAppropriateWithSecretKey(602) - Waiting for server response.
+2023-06-04 22:29:40 INFO  ApacheHttpClient.refreshUserInfo(305) - responseCode = 200
+2023-06-04 22:29:40 INFO  ApacheHttpClient.refreshUserInfo(311) - User information received.
+2023-06-04 22:29:40 INFO  ApacheHttpClient.startGA(36) - GAService started.

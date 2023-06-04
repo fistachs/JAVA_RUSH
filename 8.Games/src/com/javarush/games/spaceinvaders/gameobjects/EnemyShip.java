@@ -14,7 +14,7 @@ public class EnemyShip extends Ship{
         }else if(direction == Direction.LEFT) {
             x = x - speed;
         }else if(direction == Direction.DOWN) {
-            y = y+2;
+            y = y + 2;
         }
     }
 }
