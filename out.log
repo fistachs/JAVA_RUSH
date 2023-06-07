@@ -40753,3 +40753,17 @@ java.net.UnknownHostException: javarush.com
 2023-06-04 22:29:40 INFO  ApacheHttpClient.refreshUserInfo(305) - responseCode = 200
 2023-06-04 22:29:40 INFO  ApacheHttpClient.refreshUserInfo(311) - User information received.
 2023-06-04 22:29:40 INFO  ApacheHttpClient.startGA(36) - GAService started.
+2023-06-04 23:34:31 INFO  ProjectStartupHandler.projectClosing(155) - ---------- Project closed ----------
+
+2023-06-04 23:34:31 INFO  PluginProjectService.dispose(41) - PluginProjectService for disposed.
+2023-06-07 19:32:17 INFO  ProjectStartupHandler.runActivity(74) - ---------- Project opened ----------
+2023-06-07 19:32:17 INFO  ProjectStartupHandler.runActivity(75) - ---------- Version 4.03 ----------
+
+2023-06-07 19:32:17 INFO  ApacheHttpClient.isSessionAppropriateWithSecretKey(602) - Waiting for server response.
+2023-06-07 19:32:17 INFO  ApacheHttpClient.isSessionAppropriateWithSecretKey(602) - Waiting for server response.
+2023-06-07 19:32:17 INFO  ApacheHttpClient.startGA(36) - GAService started.
+2023-06-07 19:33:01 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-06-07 19:33:11 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-06-07 19:33:12 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-06-07 19:33:15 INFO  ApacheHttpClient.completed(32) - responseCode = 200
+2023-06-07 19:33:15 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
