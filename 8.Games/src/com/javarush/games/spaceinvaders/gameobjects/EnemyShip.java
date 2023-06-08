@@ -17,4 +17,8 @@ public class EnemyShip extends Ship{
             y = y+2;
         }
     }
+    @Override
+    public Bullet fire(){
+        return new Bullet(x+1,y+height,Direction.DOWN);
+    }
 }
