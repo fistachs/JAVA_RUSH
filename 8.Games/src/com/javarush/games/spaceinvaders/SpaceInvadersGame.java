@@ -1,6 +1,7 @@
 package com.javarush.games.spaceinvaders;
 
 import com.javarush.engine.cell.*;
+import com.javarush.games.spaceinvaders.gameobjects.Bullet;
 import com.javarush.games.spaceinvaders.gameobjects.EnemyFleet;
 import com.javarush.games.spaceinvaders.gameobjects.Star;
 
@@ -10,9 +11,11 @@ import java.util.List;
 public class SpaceInvadersGame extends Game {
     public static final int WIDTH = 64;
     public static final int HEIGHT = 64;
+    public static final int COMPLEXITY = 5;
+
     private List<Star> stars;
     private EnemyFleet enemyFleet;
-    public static final int COMPLEXITY = 5;
+    private List<Bullet> enemyBullets;
 
     @Override
     public void initialize() {
@@ -20,21 +23,33 @@ public class SpaceInvadersGame extends Game {
         createGame();
     }
     @Override
-    public void onTurn(int x){
+    public void onTurn(int step) {
         moveSpaceObjects();
+        check();
+
+        Bullet bullet = enemyFleet.fire(this);
+        if (bullet != null) {
+            enemyBullets.add(bullet);
+        }
+
         drawScene();
     }
 
     private void createGame() {
-        setTurnTimer(40);
-        createStars();
         enemyFleet = new EnemyFleet();
+        enemyBullets = new ArrayList<>();
+        createStars();
         drawScene();
+        setTurnTimer(40);
     }
 
     private void drawScene() {
         drawField();
         enemyFleet.draw(this);
+
+        for (Bullet bullet : enemyBullets) {
+            bullet.draw(this);
+        }
     }
 
     private void drawField() {
@@ -57,7 +72,24 @@ public class SpaceInvadersGame extends Game {
             stars.add(new Star(x, y));
         }
     }
-    private void moveSpaceObjects(){
+
+    private void moveSpaceObjects() {
         enemyFleet.move();
+
+        for (Bullet enemyBullet : enemyBullets) {
+            enemyBullet.move();
+        }
+    }
+
+    private void removeDeadBullets() {
+        for (Bullet bullet : new ArrayList<>(enemyBullets)) {
+            if (!bullet.isAlive || bullet.y >= HEIGHT - 1) {
+                enemyBullets.remove(bullet);
+            }
+        }
+    }
+
+    private void check() {
+        removeDeadBullets();
     }
 }
