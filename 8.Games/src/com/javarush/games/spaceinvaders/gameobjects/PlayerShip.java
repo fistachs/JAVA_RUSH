@@ -1,11 +1,19 @@
 package com.javarush.games.spaceinvaders.gameobjects;
 
+import com.javarush.games.spaceinvaders.Direction;
 import com.javarush.games.spaceinvaders.ShapeMatrix;
 import com.javarush.games.spaceinvaders.SpaceInvadersGame;
 
 import java.util.List;
 
 public class PlayerShip extends Ship{
+    private Direction direction = Direction.UP;
+
+    public void setDirection(Direction newDirection) {
+        if(newDirection != Direction.DOWN) {
+            this.direction = newDirection;
+        }
+    }
 
     @Override
     public void kill(){

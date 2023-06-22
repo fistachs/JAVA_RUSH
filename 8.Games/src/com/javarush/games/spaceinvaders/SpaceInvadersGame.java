@@ -9,6 +9,8 @@ import com.javarush.games.spaceinvaders.gameobjects.Star;
 import java.util.ArrayList;
 import java.util.List;
 
+import static com.javarush.engine.cell.Key.*;
+
 public class SpaceInvadersGame extends Game {
     public static final int WIDTH = 64;
     public static final int HEIGHT = 64;
@@ -39,6 +41,17 @@ public class SpaceInvadersGame extends Game {
 
         drawScene();
     }
+    @Override
+    public void onKeyPress(Key key){
+        if (key == SPACE && isGameStopped == true) {
+            createGame();
+        }else if(key == LEFT){
+            playerShip.setDirection(Direction.LEFT);
+        }else if(key == RIGHT){
+        playerShip.setDirection(Direction.RIGHT);
+    }
+    }
+
 
     private void createGame() {
         enemyFleet = new EnemyFleet();
