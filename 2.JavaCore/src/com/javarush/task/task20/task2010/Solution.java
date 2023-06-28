@@ -7,7 +7,7 @@ import java.io.Serializable;
 */
 
 public class Solution implements Serializable{
-    public static class Object implements Serializable{
+    public static class Object implements Serializable {
         public String string1;
         public String string2;
     }
