@@ -12,9 +12,9 @@ public class Solution implements Serializable{
         public String string2;
     }
 
-    public static int stringCount;
+    public static int stringCount ;
 
-    public static class String implements Serializable{
+    public static class String implements Serializable {
         private final int number;
 
         public String() {
