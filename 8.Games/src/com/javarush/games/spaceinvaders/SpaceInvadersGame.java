@@ -22,6 +22,7 @@ public class SpaceInvadersGame extends Game {
     private boolean isGameStopped;
     private int animationsCount;
     private List<Bullet> playerBullets;
+    private static final int PLAYER_BULLETS_MAX = 1;
 
 
     @Override
@@ -43,14 +44,26 @@ public class SpaceInvadersGame extends Game {
         drawScene();
     }
     @Override
-    public void onKeyPress(Key key){
-        if (key == SPACE && isGameStopped == true) {
-            createGame();
-        }else if(key == LEFT){
+    public void onKeyPress(Key key) {
+        if (Key.SPACE == key) {
+            if (isGameStopped) {
+                createGame();
+                return;
+            }
+
+            Bullet bullet = playerShip.fire();
+            if (bullet != null && playerBullets.size() < PLAYER_BULLETS_MAX) {
+                playerBullets.add(bullet);
+            }
+        }
+
+        if (Key.LEFT == key) {
             playerShip.setDirection(Direction.LEFT);
-        }else if(key == RIGHT){
-        playerShip.setDirection(Direction.RIGHT);
-    }
+        }
+
+        if (Key.RIGHT == key) {
+            playerShip.setDirection(Direction.RIGHT);
+        }
     }
 
     @Override
@@ -61,6 +74,13 @@ public class SpaceInvadersGame extends Game {
         if (Key.RIGHT == key && playerShip.getDirection() == Direction.RIGHT) {
             playerShip.setDirection(Direction.UP);
         }
+    }
+    @Override
+    public void setCellValueEx(int x, int y, Color color, String value) {
+        if (x > WIDTH - 1 || x < 0 || y < 0 || y > HEIGHT - 1) {
+            return;
+        }
+        super.setCellValueEx(x, y, color, value);
     }
 
     private void createGame() {
@@ -123,6 +143,12 @@ public class SpaceInvadersGame extends Game {
         for (Bullet bullet : new ArrayList<>(enemyBullets)) {
             if (!bullet.isAlive || bullet.y >= HEIGHT - 1) {
                 enemyBullets.remove(bullet);
+            }
+        }
+
+        for (Bullet bullet : new ArrayList<>(playerBullets)) {
+            if (!bullet.isAlive || bullet.y + bullet.height < 0) {
+                playerBullets.remove(bullet);
             }
         }
     }
