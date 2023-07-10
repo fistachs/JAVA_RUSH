@@ -43805,3 +43805,32 @@ java.lang.StringIndexOutOfBoundsException: begin -1, end 58, length 58
 2023-07-06 13:43:20 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
 2023-07-06 13:43:24 INFO  ApacheHttpClient.completed(32) - responseCode = 200
 2023-07-06 13:43:24 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-07-06 14:29:17 INFO  ProjectStartupHandler.projectClosing(155) - ---------- Project closed ----------
+
+2023-07-06 14:29:18 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-07-06 14:29:18 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-07-06 14:29:18 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-07-06 14:29:19 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-07-06 14:29:19 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-07-06 14:29:19 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-07-06 14:29:19 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-07-06 14:29:20 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-07-06 14:29:20 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-07-06 14:29:20 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-07-06 14:29:20 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-07-06 14:29:21 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-07-06 14:29:21 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-07-06 14:29:21 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-07-06 14:29:21 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-07-06 14:29:22 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-07-06 14:29:22 INFO  PluginProjectService.dispose(41) - PluginProjectService for disposed.
+2023-07-10 21:49:53 INFO  ProjectStartupHandler.runActivity(74) - ---------- Project opened ----------
+2023-07-10 21:49:53 INFO  ProjectStartupHandler.runActivity(75) - ---------- Version 4.03 ----------
+
+2023-07-10 21:49:53 INFO  ApacheHttpClient.isSessionAppropriateWithSecretKey(602) - Waiting for server response.
+2023-07-10 21:49:53 INFO  ApacheHttpClient.startGA(36) - GAService started.
+2023-07-10 21:49:54 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-07-10 21:50:05 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-07-10 21:50:05 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-07-10 21:50:12 INFO  ApacheHttpClient.completed(32) - responseCode = 200
+2023-07-10 21:50:12 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
