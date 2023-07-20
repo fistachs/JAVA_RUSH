@@ -38,6 +38,7 @@ public class PlayerShip extends Ship {
         isAlive = false;
 
         super.setAnimatedView(
+                false,
                 ShapeMatrix.KILL_PLAYER_ANIMATION_FIRST,
                 ShapeMatrix.KILL_PLAYER_ANIMATION_SECOND,
                 ShapeMatrix.KILL_PLAYER_ANIMATION_THIRD,
