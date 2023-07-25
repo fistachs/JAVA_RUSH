@@ -44434,3 +44434,23 @@ java.lang.StringIndexOutOfBoundsException: begin -1, end 58, length 58
 2023-07-21 21:30:08 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
 2023-07-21 21:30:12 INFO  ApacheHttpClient.completed(32) - responseCode = 200
 2023-07-21 21:30:12 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-07-21 21:30:25 INFO  ProjectStartupHandler.projectClosing(155) - ---------- Project closed ----------
+
+2023-07-21 21:30:25 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-07-21 21:30:25 INFO  PluginProjectService.dispose(41) - PluginProjectService for disposed.
+2023-07-25 20:40:29 INFO  ProjectStartupHandler.runActivity(74) - ---------- Project opened ----------
+2023-07-25 20:40:29 INFO  ProjectStartupHandler.runActivity(75) - ---------- Version 4.03 ----------
+
+2023-07-25 20:40:29 INFO  ApacheHttpClient.isSessionAppropriateWithSecretKey(602) - Waiting for server response.
+2023-07-25 20:40:29 INFO  ApacheHttpClient.refreshUserInfo(305) - responseCode = 200
+2023-07-25 20:40:29 INFO  ApacheHttpClient.refreshUserInfo(311) - User information received.
+2023-07-25 20:40:29 INFO  ApacheHttpClient.startGA(36) - GAService started.
+2023-07-25 20:40:38 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-07-25 20:40:39 INFO  ApacheHttpClient.getFilteredTasks(336) - responseCode = 200
+2023-07-25 20:40:43 INFO  ApacheHttpClient.getTaskTemplateInfo(353) - responseCode = 200
+2023-07-25 20:40:44 INFO  TaskInfoSelectorMouseListener.createDirectoryRecursive(78) - File created :/Users/admin/Downloads/JavaRushTasks/2.JavaCore/src/com/javarush/task/task19/task1925
+2023-07-25 20:41:00 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-07-25 20:42:20 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-07-25 20:42:20 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-07-25 20:42:24 INFO  ApacheHttpClient.completed(32) - responseCode = 200
+2023-07-25 20:42:24 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
