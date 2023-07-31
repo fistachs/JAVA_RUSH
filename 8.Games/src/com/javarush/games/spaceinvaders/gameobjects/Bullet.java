@@ -13,10 +13,11 @@ public class Bullet extends GameObject {
         this.dy = direction == Direction.UP ? -1 : 1;
     }
 
+    public void kill() {
+        isAlive = false;
+    }
+
     public void move() {
         y += dy;
-    }
-    public void kill(){
-        isAlive = false;
     }
 }

@@ -9,22 +9,22 @@ import com.javarush.games.spaceinvaders.gameobjects.Star;
 import java.util.ArrayList;
 import java.util.List;
 
-import static com.javarush.engine.cell.Key.*;
-
 public class SpaceInvadersGame extends Game {
     public static final int WIDTH = 64;
     public static final int HEIGHT = 64;
     public static final int COMPLEXITY = 5;
+    private static final int PLAYER_BULLETS_MAX = 1;
+
     private List<Star> stars;
     private EnemyFleet enemyFleet;
     private List<Bullet> enemyBullets;
-    private PlayerShip playerShip;
-    private boolean isGameStopped;
-    private int animationsCount;
-    private List<Bullet> playerBullets;
-    private static final int PLAYER_BULLETS_MAX = 1;
-    private int score;
 
+    private PlayerShip playerShip;
+    private List<Bullet> playerBullets;
+
+    private boolean isGameStopped = false;
+    private int animationsCount;
+    private int score;
 
     @Override
     public void initialize() {
@@ -36,15 +36,16 @@ public class SpaceInvadersGame extends Game {
     public void onTurn(int step) {
         moveSpaceObjects();
         check();
-        setScore(score);
 
         Bullet bullet = enemyFleet.fire(this);
         if (bullet != null) {
             enemyBullets.add(bullet);
         }
 
+        setScore(score);
         drawScene();
     }
+
     @Override
     public void onKeyPress(Key key) {
         if (Key.SPACE == key) {
@@ -77,6 +78,7 @@ public class SpaceInvadersGame extends Game {
             playerShip.setDirection(Direction.UP);
         }
     }
+
     @Override
     public void setCellValueEx(int x, int y, Color color, String value) {
         if (x > WIDTH - 1 || x < 0 || y < 0 || y > HEIGHT - 1) {
@@ -86,33 +88,38 @@ public class SpaceInvadersGame extends Game {
     }
 
     private void createGame() {
+        isGameStopped = false;
+        animationsCount = 0;
+        score = 0;
+
         enemyFleet = new EnemyFleet();
         enemyBullets = new ArrayList<>();
         playerShip = new PlayerShip();
-        isGameStopped = false;
-        animationsCount = 0;
-        playerBullets = new ArrayList<Bullet>();
+        playerBullets = new ArrayList<>();
+
         createStars();
         drawScene();
         setTurnTimer(40);
-        score = 0;
     }
 
     private void drawScene() {
         drawField();
         enemyFleet.draw(this);
         playerShip.draw(this);
-        for(Bullet buletta : playerBullets){
-            buletta.draw(this);
-        }
+
         for (Bullet bullet : enemyBullets) {
             bullet.draw(this);
         }
+
+        for (Bullet bullet : playerBullets) {
+            bullet.draw(this);
+        }
+
     }
 
     private void drawField() {
-        for (int y = 0; y < HEIGHT; y++) {
-            for (int x = 0; x < WIDTH; x++) {
+        for (int x = 0; x < WIDTH; x++) {
+            for (int y = 0; y < HEIGHT; y++) {
                 setCellValueEx(x, y, Color.BLACK, "");
             }
         }
@@ -134,11 +141,12 @@ public class SpaceInvadersGame extends Game {
     private void moveSpaceObjects() {
         enemyFleet.move();
         playerShip.move();
-        for(Bullet buletta : playerBullets){
-            buletta.move();
-        }
         for (Bullet enemyBullet : enemyBullets) {
             enemyBullet.move();
+        }
+
+        for (Bullet bullet : playerBullets) {
+            bullet.move();
         }
     }
 
@@ -158,33 +166,43 @@ public class SpaceInvadersGame extends Game {
 
     private void check() {
         playerShip.verifyHit(enemyBullets);
+
         score += enemyFleet.verifyHit(playerBullets);
+
         enemyFleet.deleteHiddenShips();
-        if(enemyFleet.getBottomBorder()>=playerShip.y){
-            playerShip.kill();
-        }
         removeDeadBullets();
-        if(playerShip.isAlive == false){
+
+        if (!playerShip.isAlive) {
             stopGameWithDelay();
         }
-        if(enemyFleet.getShipsCount() == 0){
+
+        if (enemyFleet.getBottomBorder() >= playerShip.y) {
+            playerShip.kill();
+        }
+
+
+        if (enemyFleet.getShipsCount() == 0) {
             playerShip.win();
             stopGameWithDelay();
         }
     }
-    private void stopGame(boolean isWin){
+
+    private void stopGame(boolean isWin) {
         isGameStopped = true;
         stopTurnTimer();
-        if(isWin == true){
-            showMessageDialog(Color.BLACK,"You win!",Color.GREEN,70);
-        }else if(isWin == false){
-            showMessageDialog(Color.BLACK,"You looser!",Color.RED,70);
+
+        if (isWin) {
+            showMessageDialog(Color.NONE, "YOU WIN", Color.GREEN, 50);
+        } else {
+            showMessageDialog(Color.NONE, "GAME OVER", Color.RED, 50);
         }
     }
-    private void stopGameWithDelay(){
+
+    private void stopGameWithDelay() {
         animationsCount++;
-        if(animationsCount>=10){
+        if (animationsCount >= 10) {
             stopGame(playerShip.isAlive);
         }
     }
+
 }

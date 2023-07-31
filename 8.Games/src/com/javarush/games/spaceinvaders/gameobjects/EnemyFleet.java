@@ -1,5 +1,6 @@
 package com.javarush.games.spaceinvaders.gameobjects;
 
+
 import com.javarush.engine.cell.Game;
 import com.javarush.games.spaceinvaders.Direction;
 import com.javarush.games.spaceinvaders.ShapeMatrix;
@@ -12,6 +13,7 @@ public class EnemyFleet {
     private static final int ROWS_COUNT = 3;
     private static final int COLUMNS_COUNT = 10;
     private static final int STEP = ShapeMatrix.ENEMY.length + 1;
+
     private List<EnemyShip> ships;
     private Direction direction = Direction.RIGHT;
 
@@ -19,20 +21,56 @@ public class EnemyFleet {
         createShips();
     }
 
+    private void createShips() {
+        ships = new ArrayList<>();
+        for (int y = 0; y < ROWS_COUNT; y++) {
+            for (int x = 0; x < COLUMNS_COUNT; x++) {
+                ships.add(new EnemyShip(x * STEP, y * STEP + 12));
+            }
+        }
+
+        Boss boss = new Boss(STEP * COLUMNS_COUNT / 2 - ShapeMatrix.BOSS_ANIMATION_FIRST.length / 2 - 1, 5);
+        ships.add(boss);
+    }
+
     public void draw(Game game) {
-        for (EnemyShip ship : ships) {
+        for (GameObject ship : ships) {
             ship.draw(game);
         }
     }
 
-    private void createShips() {
-        ships = new ArrayList<>();
-        for (int x = 0; x < COLUMNS_COUNT; x++) {
-            for (int y = 0; y < ROWS_COUNT; y++) {
-                ships.add(new EnemyShip(x * STEP, y * STEP + 12));
+    public int getShipsCount() {
+        return ships.size();
+    }
+
+    public void move() {
+        if (ships.isEmpty()) {
+            return;
+        }
+
+        Direction currentDirection = direction;
+        if (direction == Direction.LEFT && getLeftBorder() < 0) {
+            direction = Direction.RIGHT;
+            currentDirection = Direction.DOWN;
+        } else if (direction == Direction.RIGHT && getRightBorder() > SpaceInvadersGame.WIDTH) {
+            direction = Direction.LEFT;
+            currentDirection = Direction.DOWN;
+        }
+
+        double speed = getSpeed();
+        for (EnemyShip ship : ships) {
+            ship.move(currentDirection, speed);
+        }
+    }
+
+    public double getBottomBorder() {
+        double bottom = 0;
+        for (GameObject ship : ships) {
+            if (ship.y + ship.height > bottom) {
+                bottom = ship.y + ship.height;
             }
         }
-        ships.add(new Boss(STEP * COLUMNS_COUNT / 2 - ShapeMatrix.BOSS_ANIMATION_FIRST.length / 2 - 1,5));
+        return bottom;
     }
 
     private double getLeftBorder() {
@@ -61,26 +99,6 @@ public class EnemyFleet {
         return speed > 2. ? 2. : speed;
     }
 
-    public void move() {
-        if (ships.isEmpty()) {
-            return;
-        }
-
-        Direction currentDirection = direction;
-        if (direction == Direction.LEFT && getLeftBorder() < 0) {
-            direction = Direction.RIGHT;
-            currentDirection = Direction.DOWN;
-        } else if (direction == Direction.RIGHT && getRightBorder() > SpaceInvadersGame.WIDTH) {
-            direction = Direction.LEFT;
-            currentDirection = Direction.DOWN;
-        }
-
-        double speed = getSpeed();
-        for (EnemyShip ship : ships) {
-            ship.move(currentDirection, speed);
-        }
-    }
-
     public Bullet fire(Game game) {
         if (ships.isEmpty()) {
             return null;
@@ -95,6 +113,14 @@ public class EnemyFleet {
         EnemyShip ship = ships.get(shipNumber);
 
         return ship.fire();
+    }
+
+    public void deleteHiddenShips() {
+        for (EnemyShip ship : new ArrayList<>(ships)) {
+            if (!ship.isVisible()) {
+                ships.remove(ship);
+            }
+        }
     }
 
     public int verifyHit(List<Bullet> bullets) {
@@ -113,26 +139,5 @@ public class EnemyFleet {
             }
         }
         return score;
-    }
-
-    public void deleteHiddenShips() {
-        for (EnemyShip ship : new ArrayList<>(ships)) {
-            if (!ship.isVisible()) {
-                ships.remove(ship);
-            }
-        }
-    }
-
-    public double getBottomBorder() {
-        double bottom = 0;
-        for (GameObject ship : ships) {
-            if (ship.y + ship.height > bottom) {
-                bottom = ship.y + ship.height;
-            }
-        }
-        return bottom;
-    }
-    public int getShipsCount(){
-        return ships.size();
     }
 }

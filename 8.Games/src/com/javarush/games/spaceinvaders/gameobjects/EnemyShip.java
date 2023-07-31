@@ -3,25 +3,33 @@ package com.javarush.games.spaceinvaders.gameobjects;
 import com.javarush.games.spaceinvaders.Direction;
 import com.javarush.games.spaceinvaders.ShapeMatrix;
 
-public class EnemyShip extends Ship{
+public class EnemyShip extends Ship {
     public int score = 15;
+
     public EnemyShip(double x, double y) {
         super(x, y);
-        setStaticView(ShapeMatrix.ENEMY);
+        this.setStaticView(ShapeMatrix.ENEMY);
     }
-    public void move(Direction direction, double speed){
-        if(direction == Direction.RIGHT){
-            x = x+speed;
-        }else if(direction == Direction.LEFT) {
-            x = x - speed;
-        }else if(direction == Direction.DOWN) {
-            y = y+2;
+
+    public void move(Direction direction, double speed) {
+        switch (direction) {
+            case RIGHT:
+                x = x + speed;
+                break;
+            case LEFT:
+                x = x - speed;
+                break;
+            case DOWN:
+                y += 2;
+                break;
         }
     }
+
     @Override
-    public Bullet fire(){
-        return new Bullet(x+1,y+height,Direction.DOWN);
+    public Bullet fire() {
+        return new Bullet(x + 1, y + height, Direction.DOWN);
     }
+
     @Override
     public void kill() {
         if (!isAlive) {
