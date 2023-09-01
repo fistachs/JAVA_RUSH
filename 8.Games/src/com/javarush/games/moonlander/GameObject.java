@@ -1,5 +1,5 @@
 package com.javarush.games.moonlander;
-import com.javarush.engine.cell.*;
+
 import com.javarush.engine.cell.Color;
 import com.javarush.engine.cell.Game;
 
