@@ -15,13 +15,14 @@ public class MoonLanderGame extends Game {
     @Override
     public void initialize() {
         setScreenSize(WIDTH, HEIGHT);
-        showGrid(false);
         createGame();
+        showGrid(false);
     }
 
     @Override
-    public void onTurn(int Step) {
-        rocket.move(isUpPressed,isLeftPressed,isRightPressed);
+    public void onTurn(int step) {
+        rocket.move(isUpPressed, isLeftPressed, isRightPressed);
+        check();
         drawScene();
     }
 
@@ -35,25 +36,25 @@ public class MoonLanderGame extends Game {
 
     @Override
     public void onKeyPress(Key key) {
-        if (key == Key.UP) {
-            isUpPressed = true;
-        } else if (key == Key.LEFT) {
-            isLeftPressed = true;
-            isRightPressed = false;
-        } else if (key == Key.RIGHT) {
+        if (Key.RIGHT == key) {
             isRightPressed = true;
             isLeftPressed = false;
+        } else if (Key.LEFT == key) {
+            isLeftPressed = true;
+            isRightPressed = false;
+        } else if (Key.UP == key) {
+            isUpPressed = true;
         }
     }
 
     @Override
     public void onKeyReleased(Key key) {
-        if (key == Key.UP) {
-            isUpPressed = false;
-        } else if (key == Key.LEFT) {
-            isLeftPressed = false;
-        } else if (key == Key.RIGHT) {
+        if (Key.RIGHT == key) {
             isRightPressed = false;
+        } else if (Key.LEFT == key) {
+            isLeftPressed = false;
+        } else if (Key.UP == key) {
+            isUpPressed = false;
         }
     }
 
@@ -67,11 +68,12 @@ public class MoonLanderGame extends Game {
     }
 
     private void drawScene() {
-        for (int i = 0; i < WIDTH; i++) {
-            for (int j = 0; j < HEIGHT; j++) {
-                setCellColor(i, j, Color.ORANGE);
+        for (int y = 0; y < HEIGHT; y++) {
+            for (int x = 0; x < WIDTH; x++) {
+                setCellColor(x, y, Color.BLACK);
             }
         }
+
         rocket.draw(this);
         landscape.draw(this);
     }
@@ -79,5 +81,17 @@ public class MoonLanderGame extends Game {
     private void createGameObjects() {
         rocket = new Rocket(WIDTH / 2.0, 0);
         landscape = new GameObject(0, 25, ShapeMatrix.LANDSCAPE);
+
+    }
+
+    private void check() {
+
+    }
+
+    private void win() {
+
+    }
+    private void gameOver() {
+
     }
 }

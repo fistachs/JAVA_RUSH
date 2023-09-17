@@ -1,7 +1,5 @@
 package com.javarush.games.moonlander;
 
-import static com.javarush.games.moonlander.MoonLanderGame.WIDTH;
-
 public class Rocket extends GameObject {
     private double speedY = 0;
     private double speedX = 0;
@@ -33,7 +31,6 @@ public class Rocket extends GameObject {
         }
         x += speedX;
         checkBorders();
-
     }
 
     private void checkBorders() {
@@ -48,5 +45,9 @@ public class Rocket extends GameObject {
             y = 0;
             speedY = 0;
         }
+    }
+
+    public boolean isStopped() {
+        return speedY < 10 * boost;
     }
 }
