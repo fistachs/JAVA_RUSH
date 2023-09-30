@@ -46528,3 +46528,19 @@ java.lang.StringIndexOutOfBoundsException: begin -1, end 46, length 46
 2023-09-17 21:23:25 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
 2023-09-17 21:23:29 INFO  ApacheHttpClient.completed(32) - responseCode = 200
 2023-09-17 21:23:29 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-09-17 21:23:43 INFO  ProjectStartupHandler.projectClosing(155) - ---------- Project closed ----------
+
+2023-09-17 21:23:43 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-09-17 21:23:43 INFO  PluginProjectService.dispose(41) - PluginProjectService for disposed.
+2023-09-30 22:01:34 INFO  ProjectStartupHandler.runActivity(74) - ---------- Project opened ----------
+2023-09-30 22:01:34 INFO  ProjectStartupHandler.runActivity(75) - ---------- Version 4.03 ----------
+
+2023-09-30 22:01:34 INFO  ApacheHttpClient.isSessionAppropriateWithSecretKey(602) - Waiting for server response.
+2023-09-30 22:01:34 INFO  ApacheHttpClient.refreshUserInfo(305) - responseCode = 200
+2023-09-30 22:01:34 INFO  ApacheHttpClient.refreshUserInfo(311) - User information received.
+2023-09-30 22:01:34 INFO  ApacheHttpClient.startGA(36) - GAService started.
+2023-09-30 22:03:14 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-09-30 22:03:14 INFO  ApacheHttpClient.getFilteredTasks(336) - responseCode = 200
+2023-09-30 22:03:17 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-09-30 22:03:17 INFO  ApacheHttpClient.getTaskTemplateInfo(353) - responseCode = 200
+2023-09-30 22:03:23 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
