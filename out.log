@@ -46544,3 +46544,13 @@ java.lang.StringIndexOutOfBoundsException: begin -1, end 46, length 46
 2023-09-30 22:03:17 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
 2023-09-30 22:03:17 INFO  ApacheHttpClient.getTaskTemplateInfo(353) - responseCode = 200
 2023-09-30 22:03:23 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2023-09-30 22:37:15 INFO  ProjectStartupHandler.projectClosing(155) - ---------- Project closed ----------
+
+2023-09-30 22:37:16 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2023-09-30 22:37:16 INFO  PluginProjectService.dispose(41) - PluginProjectService for disposed.
+2023-10-08 00:29:22 INFO  ProjectStartupHandler.runActivity(74) - ---------- Project opened ----------
+2023-10-08 00:29:23 INFO  ProjectStartupHandler.runActivity(75) - ---------- Version 4.03 ----------
+
+2023-10-08 00:29:23 INFO  ApacheHttpClient.isSessionAppropriateWithSecretKey(602) - Waiting for server response.
+2023-10-08 00:29:23 INFO  ApacheHttpClient.startGA(36) - GAService started.
+2023-10-08 00:29:23 INFO  AnalyticsService.run(86) - null : error in server. Status code :429
