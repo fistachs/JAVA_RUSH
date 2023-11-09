@@ -13,6 +13,7 @@ public class Solution {
         Pet dog = pet2.getChild();
     }
 
+
     public static class Pet {
         public Pet getChild() {
             return new Pet();
